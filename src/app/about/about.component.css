@@ -1,0 +1,135 @@
+section {
+  padding: 160px 15% 120px;
+}
+span {
+  color: var(--main-color);
+}
+.about-Heading {
+  font-family: "Gloock", serif;
+}
+.about-H4 {
+  margin-left: 9%;
+  font-family: "Zeyada", "cursive";
+}
+.btn {
+  font-family: "Gloock", serif;
+  display: inline-block;
+  padding: 12px 28px;
+  background: var(--main-color);
+  color: var(--text-color);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: all 0.45s ease;
+}
+.btn:hover {
+  transform: scale(0.9);
+}
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+.about-img {
+  position: relative;
+}
+.about-img::before {
+  content: "";
+  position: absolute;
+  border-left: 5px solid var(--main-color);
+  border-top: 5px solid var(--main-color);
+  top: -5%;
+  left: -8%;
+  width: 10%;
+  height: 8%;
+}
+
+.about-img::after {
+  content: "";
+  position: absolute;
+  border-right: 5px solid var(--main-color);
+  border-bottom: 5px solid var(--main-color);
+  bottom: -7%;
+  right: 9%;
+  width: 11%;
+  height: 8.5%;
+}
+
+.about-img img {
+  z-index: -1;
+  opacity: 0.6;
+  max-width: 530px;
+  height: 100%;
+  width: 82.5%;
+  border-radius: 5px;
+}
+.about-text h2 {
+  margin-top: 5%;
+  font-size: var(--h2-font);
+  line-height: 1;
+}
+.about.text h4 {
+  font-size: 24px;
+  font-weight: auto;
+  color: var(--text-color);
+  line-height: 1.7;
+  margin: 15px 0 39px;
+}
+.tw-about {
+  margin-top: 4%;
+  margin-bottom: 7%;
+  font-size: 1.3rem;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: "Courgette", "cursive";
+}
+
+@media (max-width: 920px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+  .about-img {
+    text-align: center;
+    order: 2;
+  }
+  .about-img img {
+    opacity: 0.6;
+    height: 100%;
+    width: 65%;
+  }
+  .about-img::before {
+    top: -6%;
+    left: 10%;
+    width: 12%;
+    height: 11%;
+  }
+}
+/* about border  */
+@media (max-width: 1326px) {
+  .about-H4::after {
+    right: 31%;
+    top: 147%;
+  }
+}
+@media (max-width: 1238px) {
+  .about-img img {
+    height: auto;
+  }
+  .about-img::after {
+    bottom: 3%;
+  }
+}
+@media (max-width: 1168px) {
+  .about-img::after {
+    border-left: 5px solid rgba(0, 0, 0, 0);
+    border-top: 5px solid rgba(0, 0, 0, 0);
+  }
+}
+@media (max-width: 1238px) {
+  .about-img::after {
+    bottom: 32px;
+    border-bottom: #0000ff00;
+    border-right-color: #ffffff00;
+    position: sticky;
+  }
+}

@@ -1,0 +1,177 @@
+section {
+  padding: 160px 15% 120px;
+}
+.main-text {
+  position: relative;
+  text-align: center;
+}
+.main-text p {
+  font-family: "Courgette", "cursive";
+}
+.MyserviceHeading {
+  font-family: "Gloock", serif;
+}
+.MyserviceHeading::after {
+  content: "";
+  position: absolute;
+  border-right: 3px solid var(--text-color);
+  border-bottom: 6px solid var(--main-color);
+  border-bottom-right-radius: 97%;
+  border-bottom-left-radius: 189%;
+  bottom: -66%;
+  right: 40%;
+  width: 21%;
+  height: 127%;
+}
+span {
+  color: var(--main-color);
+}
+.portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 5rem;
+}
+.row {
+  position: relative;
+  overflow: hidden;
+  border: 8px;
+  cursor: pointer;
+}
+.row img {
+  opacity: 0.35;
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  transition: all 0.45s ease;
+}
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), #ff004f);
+  position: absolute;
+  border-radius: 8px;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 40px;
+  transition: height 0.5s;
+}
+.layer h5 {
+  font-family: "Gloock", serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.layer p {
+  font-family: "Gloock", serif;
+  font-style: italic;
+  color: var(--second-color);
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: -80%;
+}
+.layer .ser-icon {
+  color: var(--main-color);
+  margin-top: 20px;
+  font-size: 30px;
+  background: #a6a6a6;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.externalLink {
+  position: relative;
+  top: 90%;
+  width: 10%;
+  height: 10%;
+}
+.row:hover img {
+  transform: scale(1.1);
+}
+.row:hover .layer {
+  height: 100%;
+}
+
+@media (max-width: 440px) {
+  .row {
+    overflow: visible;
+  }
+  .row img {
+    margin-left: -10%;
+    transition: all 0.45s ease;
+  }
+  .layer {
+    width: 100%;
+    left: -40px;
+    bottom: -5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+  }
+}
+
+@media (max-width: 1210px) {
+  .MyserviceHeading::after {
+    bottom: -66%;
+    right: 38%;
+    width: 25%;
+    height: 127%;
+  }
+}
+@media (max-width: 1030px) {
+  .MyserviceHeading::after {
+    right: 36%;
+    width: 31%;
+  }
+}
+@media (max-width: 890px) {
+  .MyserviceHeading::after {
+    right: 33%;
+    width: 37%;
+  }
+}
+@media (max-width: 715px) {
+  .MyserviceHeading::after {
+    right: 30%;
+    width: 39%;
+  }
+}
+@media (max-width: 618px) {
+  .MyserviceHeading::after {
+    right: 22%;
+    width: 56%;
+  }
+}
+@media (max-width: 455px) {
+  .MyserviceHeading::after {
+    right: 12%;
+    width: 79%;
+  }
+}
+@media (max-width: 414px) {
+  section {
+    margin-left: 38%;
+    padding: 20px 0 0 0;
+  }
+}
+@media (max-width: 327px) {
+  .MyserviceHeading::after {
+    right: -4%;
+    width: 97%;
+  }
+}

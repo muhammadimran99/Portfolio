@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+:root{
+  --bg-color: #2a2a2a;
+  --second-bg-color: #202020;
+  --text-color: #ccc;
+  --main-color: #ff4d05;
+  --big-font: 2rem;
+  --h2-font: 3rem;
+  --p-font: 1.1rem
+}
+body{
+  background:var(--bg-color);
+  color: var(--text-color);
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@media (max-width: 1100px){
+  :root{
+    --big-font: 2.6rem;
+  --h2-font: 2.2rem;
+  --p-font: 1rem;
+  transition: .1s;
+  }
+}

@@ -1,0 +1,133 @@
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 22px 15%;
+  border-bottom: 1px solid transparent;
+  transition: all 0.45s ease;
+}
+.logo {
+  color: var(--text-color);
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Playfair Display";
+  letter-spacing: 3px;
+  transition: letter-spacing 0.45s ease-in-out;
+}
+.logo:hover {
+  letter-spacing: 0.3rem;
+}
+.logo:hover span {
+  position: relative;
+  top: -8px;
+}
+span {
+  color: var(--main-color);
+}
+.navlist {
+  display: flex;
+}
+.navlist a {
+  font-family: "Roboto Serif", "seri";
+  color: var(--second-color);
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 1rem;
+  transition: all 0.8s ease;
+}
+.navlist a:hover {
+  border-bottom: 1px solid red;
+  color: var(--main-color);
+  letter-spacing: 0.05em;
+}
+.navlist a.active {
+  color: var(--main-color);
+}
+
+#menu-icon {
+  /* font-size: 35px; */
+  z-index: 10001;
+  cursor: pointer;
+  margin-left: 25px;
+  display: none;
+}
+header.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--bg-color);
+  border-bottom: 1px solid #ffffff1a;
+  padding: 12px 15%;
+  /* z-index: 999; */
+}
+
+@media (max-width: 1480px) {
+  header {
+    padding: 12px 2.5%;
+    transition: 0.1s;
+  }
+  header.sticky {
+    padding: 10px 2.5%;
+    transition: 0.1s;
+  }
+  section {
+    padding: 110px 3% 60px;
+  }
+  .end {
+    padding: 15px 3%;
+  }
+}
+
+@media (max-width: 840px) {
+  #menu-icon {
+    display: block;
+    margin-right: 6%;
+  }
+  .navlist {
+    position: absolute;
+    top: -1000px;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-color);
+    text-align: left;
+    transition: all 0.4s ease;
+  }
+  .navlist a {
+    display: block;
+    margin: 17px;
+    font-size: 20px;
+    transition: all 0.4s ease;
+    color: var(--text-color);
+  }
+  .navlist a:hover {
+    border: none;
+    color: var(--main-color);
+  }
+  .navlist a.active {
+    color: var(--text-color);
+  }
+  .navlist.open {
+    top: 100%;
+  }
+}
+@media (max-width: 418px) {
+  #menu-icon {
+    display: block;
+    margin-right: 6%;
+  }
+}
+@media (max-width: 414px) {
+  header {
+    position: absolute;
+    margin-right: -38%;
+    width: 132%;
+  }
+}

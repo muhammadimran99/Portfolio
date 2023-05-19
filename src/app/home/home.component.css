@@ -1,0 +1,250 @@
+span {
+  color: var(--main-color);
+}
+section {
+  padding: 160px 15% 120px;
+}
+.home {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../../assets/bg-dark.jpeg);
+  opacity: 0.6;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.slide {
+  margin-bottom: 20px;
+}
+.tw {
+  font-style: italic;
+  font-weight: 300;
+}
+.one {
+  display: inline-block;
+  margin-right: 15px;
+  height: 32px;
+  padding: 0 15px;
+  line-height: 32px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 5px;
+  background: var(--main-color);
+  color: var(--text-color);
+}
+.two {
+  display: inline-block;
+  color: var(--second-color);
+  font-size: 20px;
+  font-weight: 700;
+}
+.home-text h1 {
+  font-size: var(--big-font);
+  font-weight: 9 00;
+  color: var(--text-color);
+  list-style: 1.1;
+  margin: 0 0 8px;
+}
+.home-text h3 {
+  color: var(--text-color);
+  margin: 0 0 35px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+.home-text p {
+  color: var(--second-color);
+  font-size: var((--p-font));
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: var(--main-color);
+  border-radius: 5px;
+  color: var(--text-color);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: all 0.45s ease;
+}
+.btn:hover {
+  transform: scale(0.9);
+}
+
+.btn2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+.matIcon {
+  height: 55px;
+  width: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  border-radius: 15px;
+  margin-left: 27px;
+  transition: all 0.45s ease;
+}
+.homePara {
+  font-family: "Gloock", serif;
+  font-style: oblique;
+}
+.mywork {
+  transition: letter-spacing 0.5s ease-in-out;
+}
+.mywork:hover {
+  transition: letter-spacing 0.5s ease-in-out;
+  letter-spacing: 2px;
+}
+.matIcon:hover {
+  transform: rotate(90deg);
+}
+
+@media (max-width: 1100px) {
+  .home-text h3 {
+    font-size: 2.5rem;
+  }
+  .home {
+    height: 100vh;
+  }
+}
+@media (max-width: 566px) {
+  .home {
+    background-image: url(../../assets/sm-pic-bg.png);
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.6;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 424px) {
+  .btn {
+    padding: 9px 8px;
+  }
+  .home {
+    height: 100vh;
+  }
+  .matIcon {
+    font-size: 40px;
+  }
+  .one {
+    margin-right: 10px;
+    height: 20px;
+    padding: 0 10px;
+    line-height: 15px;
+    font-size: 20px;
+  }
+  .two {
+    font-size: 10px;
+    font-weight: 700;
+  }
+  .home-text h1 {
+    font-size: 1.2rem;
+    font-weight: 9 00;
+    color: var(--text-color);
+    list-style: 1.1;
+    margin: 0 0 5px;
+  }
+  .home-text h3 {
+    color: var(--text-color);
+    margin: 0 0 35px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+}
+/* @media (max-width: 424px) {
+  .home {
+    background-image: url(../../assets/sm-pic-bg.png);
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.6;
+    background-size: cover;
+  }
+  .one {
+    margin-right: 10px;
+    height: 23px;
+    padding: 4px 10px;
+    line-height: 14px;
+    font-size: 20px;
+  }
+  .two {
+    font-size: 14px;
+  }
+} */
+
+@media (max-width: 415px) {
+  .home {
+    width: 155%;
+    height: 159vh;
+  }
+}
+@media (max-width: 345px) {
+  .home {
+    width: 156%;
+    height: 159vh;
+  }
+}
+@media (max-width: 344px) {
+  .home {
+    width: 157%;
+    height: 159vh;
+  }
+}
+@media (max-width: 334px) {
+  .home {
+    width: 158%;
+    height: 159vh;
+  }
+}
+@media (max-width: 326px) {
+  .home {
+    width: 159%;
+    height: 159vh;
+  }
+}
+@media (max-width: 317px) {
+  .home {
+    width: 160%;
+    height: 160vh;
+  }
+}
+@media (max-width: 309px) {
+  .home {
+    width: 162%;
+    height: 162vh;
+  }
+}
+@media (max-width: 301px) {
+  .home {
+    width: 163%;
+    height: 163vh;
+  }
+}
+@media (max-width: 298px) {
+  .home {
+    width: 165%;
+    height: 165vh;
+  }
+}

@@ -1,0 +1,38 @@
+<section class="home" id="home">
+  <div class="home-text">
+    <div class="slide">
+      <span class="one">Hello</span>
+      <span class="two">I'm</span>
+    </div>
+    <!-- <div class="tw"></div> -->
+    <h1>Muhammad Imran</h1>
+    <h3 class="tw"><span></span></h3>
+    <p class="homePara">Web Developer with an experince of one year.</p>
+    <div class="button">
+      <a
+        (click)="toContact()"
+        routerLink="contact"
+        routerLinkActive="active"
+        class="btn"
+        >Say Hello</a
+      >
+      <a
+        (click)="toPortfolio()"
+        routerLink="portfolio"
+        routerLinkActive="active"
+        class="btn2 mywork"
+      >
+        <span>
+          <mat-icon
+            class="matIcon"
+            aria-hidden="false"
+            aria-label="Example home icon"
+            fontIcon="play_circle_filled"
+          >
+          </mat-icon>
+        </span>
+        See My Work
+      </a>
+    </div>
+  </div>
+</section>

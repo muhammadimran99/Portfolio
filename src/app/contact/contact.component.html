@@ -1,0 +1,105 @@
+<section class="contact" id="contact">
+  <div class="contact-text">
+    <h2 class="contactHeading">
+      Contact <span class="contactHeading">Me!</span>
+    </h2>
+    <p class="contactPara">
+      Feel free to reach out to me, and I will be glad to assist you!
+    </p>
+    <div class="list">
+      <li>
+        <a class="contactPara">
+          <mat-icon
+            id="footer-icon"
+            aria-hidden="false"
+            aria-label="Example home icon"
+            fontIcon="call"
+          ></mat-icon>
+          +92312-6674794</a
+        >
+      </li>
+      <li>
+        <a class="contactPara">
+          <mat-icon
+            id="footer-icon"
+            aria-hidden="false"
+            aria-label="Example home icon"
+            fontIcon="contact_mail"
+          ></mat-icon>
+          imrankhan99281@gmail.com</a
+        >
+      </li>
+    </div>
+    <div class="contact-icons">
+      <a href="https://web.facebook.com/mani99282" target="_blank">
+        <img
+          src="../../assets/facebook-messanger.png"
+          class="ser-icon social-icon"
+          alt="Fb"
+      /></a>
+      <a
+        href="https://www.linkedin.com/in/muhammad-imran-393063242/"
+        target="_blank"
+        ><img
+          src="../../assets/linkedin.png"
+          class="ser-icon social-icon"
+          alt="linkedIN"
+      /></a>
+      <a
+        href="https://api.whatsapp.com/send?phone=00923126674794&text=Hello%20there!"
+        target="_blank"
+      >
+        <img
+          src="../../assets/whatsapp.png"
+          class="ser-icon social-icon"
+          alt="whatsapp"
+        />
+      </a>
+      <a href="https://www.instagram.com/maa_ni/" target="_blank"
+        ><img
+          src="../../assets/instagram.png"
+          class="ser-icon social-icon"
+          alt="instagram"
+      /></a>
+    </div>
+  </div>
+
+  <div class="contact-form">
+    <form action="https://formspree.io/f/xrgvqzpe" method="POST">
+      <input type="name" placeholder="Your Name" required name="name" />
+      <input type="subject" placeholder="Subject" required name="subject" />
+      <input
+        type="email"
+        placeholder="Your Email Address"
+        name="email"
+        required
+      />
+      <textarea
+        name="message"
+        id=""
+        cols="35"
+        rows="10"
+        placeholder="How can i Help You"
+      ></textarea>
+      <input type="submit" value="Send Message" class="submit" requireds />
+    </form>
+  </div>
+</section>
+<!-- end section -->
+<section class="end">
+  <div class="last-end">
+    <p class="contactPara" id="copyright">
+      Copyright &#169; 2022 by Muhammad Imran All right Reserved
+    </p>
+  </div>
+  <div class="top">
+    <a (click)="toHome()" routerLink="/home" routerLinkActive="active"
+      ><mat-icon
+        class="footer-icon"
+        aria-hidden="false"
+        aria-label="Example home icon"
+        fontIcon="arrow_upward"
+      ></mat-icon
+    ></a>
+  </div>
+</section>
