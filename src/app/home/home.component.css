@@ -4,6 +4,13 @@ span {
 section {
   padding: 160px 15% 120px;
 }
+/* This will deleted at the end */
+
+.home {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
 .home {
   position: relative;
   height: 100vh;
